@@ -1,93 +1,93 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main () {
+    // carta1
+    
+    char estado1;
+    char código1[4];
+    char nomedoEstado1[50];
+    int população1;
+    float area1;
+    float pib1;
+    int pontosTuristicos1;
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    #include <stdio.h>
+    // carta 2 
 
-    int main () {
-        // carta1
-        
-        char Estado1;
-        char Código1[50];
-        char NomedoEstado1[50];
-        int População1;
-        float Área1;
-        float Pib1;
-        int PontosTuristicos1;
+    char estado2;
+    char código2[4];
+    char nomedoEstado2[50];
+    int população2;
+    float area2;
+    float pib2;
+    int pontosTuristicos2;
+  
+    // Entrada de dados carta 1
+  
+
+    printf ("Digite a letra do seu Estado  1: \n");
+    scanf (" %c", &estado1);
+
+    printf ("Digite o Código 1: \n");
+    scanf ("%s", &código1);
+
+    getchar ();
+    printf ("Digite o Nome do Estado 1: \n");
+    fgets(nomedoEstado1, sizeof(nomedoEstado1), stdin);
+     
+    printf ("Digite a População 1: \n");
+    scanf ("%i", &população1);
+
+    printf ("Digite a Área 1: \n");
+    scanf ("%f", &area1);
+
+    printf ("Digite o Pib 1: \n");
+    scanf ("%f", &pib1);
     
-        // carta 2 
+    printf ("Digite o Numero de pontos turisticos 1: \n");
+    scanf ("%d", &pontosTuristicos1);
+
+  
+   // carta 2 entrada de dados 
+
+    printf ("Digite a letra do seu Estado  2: \n");
+    scanf (" %c", &estado2);
+
+    printf ("Digite o Código 2: \n");
+    scanf ("%s", &código2);
+
+    getchar ();
+    printf ("Digite o Nome do Estado 2: \n");
+    fgets (nomedoEstado2, sizeof(nomedoEstado2), stdin);
+     
+    printf ("Digite a População 2: \n");
+    scanf ("%d", &população2);
+
+    printf ("Digite a Área 2: \n");
+    scanf ("%f", &area2);
+
+    printf ("Digite o Pib 2: \n");
+    scanf ("%f", &pib2);
     
-        char Estado2;
-        char Código2[4];
-        char NomedoEstado2[50];
-        int População2;
-        float Área2;
-        float Pib2;
-        int PontosTuristicos2;
-      
-        // Entrada de dados carta 1
-      
-    
-        printf ("Digite a letra do seu Estado  1: \n");
-        scanf ("%s", &Estado1);
-    
-        printf ("Digite o Código 1: \n");
-        scanf ("%s", &Código1);
-    
-        printf ("Digite o Nome do Estado 1: \n");
-        scanf ("%s", &NomedoEstado1);
-         
-        printf ("Digite a População 1: \n");
-        scanf ("%d", &População1);
-    
-        printf ("Digite a Área 1: \n");
-        scanf ("%f", &Área1);
-    
-        printf ("Digite o Pib 1: \n");
-        scanf ("%f", &Pib1);
-        
-        printf ("Digite o Numero de pontos turisticos 1: \n");
-        scanf ("%d", &PontosTuristicos1);
-    
-      
-       // carta 2 entrada de dados 
-    
-        printf ("Digite a letra do seu Estado  2: \n");
-        scanf ("%s", &Estado2);
-    
-        printf ("Digite o Código 2: \n");
-        scanf ("%s", &Código2);
-    
-        printf ("Digite o Nome do Estado 2: \n");
-        scanf ("%s", &NomedoEstado2);
-         
-        printf ("Digite a População 2: \n");
-        scanf ("%d", &População2);
-    
-        printf ("Digite a Área 2: \n");
-        scanf ("%f", &Área2);
-    
-        printf ("Digite o Pib 2: \n");
-        scanf ("%f", &Pib2);
-        
-        printf ("Digite o Numero de pontos turisticos 2: \n");
-        scanf ("%d", &PontosTuristicos2);
-    
-        return 0;
-    }
+    printf ("Digite o Numero de pontos turisticos 2: \n");
+    scanf ("%d", &pontosTuristicos2);
+
+    // Exibição de dados
+
+    printf("Estado 1: %c\n- Codigo %s\n- Nome do estado %s\n", estado1, código1, nomedoEstado1);
+    printf ("População %d\n", população1);
+    printf ("Área %f\n", area1);
+    printf ("Pib %f\n", pib1);
+    printf ("Pontos Turisticos %d\n", pontosTuristicos1);
+
+    printf ("Estado 2 %c \n", estado2 );
+    printf ("Codigo %s\n", código2);
+    printf ("Nome do Estado %s\n", nomedoEstado2);
+    printf ("População %d\n", população2);
+    printf ("Área %f\n", area2);
+    printf ("Pib %f\n", pib2);
+    printf ("Pontos Tursticos %d\n", pontosTuristicos2);
+
+    return 0;
+}
+
     
